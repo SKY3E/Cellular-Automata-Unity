@@ -235,11 +235,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f757a8077b782848a1c6b692a369872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 40
-  height: 40
-  fillPercent: 40
-  seed: 0
-  smoothCount: 3
+  mapWidth: 40
+  mapHeight: 40
+  noiseScale: 1
+  tilemap: {fileID: 1931846978}
+  tiles:
+  - {fileID: 11400000, guid: c8572efd481ee12409cf20b8d2e9a6ea, type: 2}
+  - {fileID: 11400000, guid: e24f2a0f88756f344be2a027843e7124, type: 2}
+  - {fileID: 11400000, guid: db5382e4c84dae54c9ab3c6a099f7fc9, type: 2}
+  - {fileID: 11400000, guid: edcf48344b262c14881fa1d48e4fcea8, type: 2}
 --- !u!4 &559008527
 Transform:
   m_ObjectHideFlags: 0
@@ -309,7 +313,6 @@ GameObject:
   - component: {fileID: 1931846975}
   - component: {fileID: 1931846978}
   - component: {fileID: 1931846977}
-  - component: {fileID: 1931846976}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -331,22 +334,6 @@ Transform:
   m_Father: {fileID: 899929669}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1931846976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931846974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fba5c8ec5a0213447a6e2bfae1815699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 1931846978}
-  wallTile: {fileID: 11400000, guid: edcf48344b262c14881fa1d48e4fcea8, type: 2}
-  floorTile: {fileID: 11400000, guid: c8572efd481ee12409cf20b8d2e9a6ea, type: 2}
-  mapGenerator: {fileID: 559008526}
 --- !u!483693784 &1931846977
 TilemapRenderer:
   m_ObjectHideFlags: 0
