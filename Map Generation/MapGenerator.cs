@@ -21,6 +21,10 @@ public class MapGenerator : MonoBehaviour
         GenerateCave();
     }
 
+    public void RegenerateCave() {
+        GenerateCave();
+    }
+
     void GenerateCave() {
         newMap = new int[shape.x, shape.y];
         for (int i = 0; i < shape.x; i++) {
