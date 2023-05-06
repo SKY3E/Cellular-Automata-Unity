@@ -235,14 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f757a8077b782848a1c6b692a369872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapWidth: 40
-  mapHeight: 40
-  noiseScale: 1
   tilemap: {fileID: 1931846978}
   tiles:
   - {fileID: 11400000, guid: c8572efd481ee12409cf20b8d2e9a6ea, type: 2}
-  - {fileID: 11400000, guid: e24f2a0f88756f344be2a027843e7124, type: 2}
-  - {fileID: 11400000, guid: db5382e4c84dae54c9ab3c6a099f7fc9, type: 2}
   - {fileID: 11400000, guid: edcf48344b262c14881fa1d48e4fcea8, type: 2}
 --- !u!4 &559008527
 Transform:
